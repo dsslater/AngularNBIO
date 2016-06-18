@@ -16,15 +16,15 @@
 
         <script src="mainController.js"></script>
         <link rel="stylesheet" type="text/css" href="main.css" />
+        <script src="components/toolbar/ToolbarController.js"></script>
         <script src="components/dataView/DataViewController.js"></script>
+        <script src="components/graph/GraphController.js"></script>
 
     </head>
 
     <body layout="column">
         <md-toolbar layout = "row">
-            <div >
-                <h1>Toolbar</h1>
-            </div>
+            <div ng-include="'components/toolbar/toolbarTemplate.html'" ng-controller="ToolbarController"></div>
         </md-toolbar>
 
         <div class="container" flex layout="row">
@@ -36,7 +36,3 @@
 
     </body>
 </html>
-
-include data view
-include data view controller
-set up ng repeat table
