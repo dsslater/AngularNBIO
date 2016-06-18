@@ -1,6 +1,6 @@
 <table class="cs142-photo-comment">
-    <tr ng-repeat="row in counter(6) track by $index" ng-init="rowCount=$index">
-        <td ng-repeat="col in counter(8) track by $index" ng-init="colCount=$index">
+    <tr ng-repeat="row in counter(numRows) track by $index" ng-init="rowCount=$index">
+        <td ng-repeat="col in counter(numCols) track by $index" ng-init="colCount=$index">
             <div ng-include="'components/graph/graphTemplate.html'" ng-controller="GraphController"></div>
         </td>
     </tr>
