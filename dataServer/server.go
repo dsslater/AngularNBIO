@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-package main
-
-import (
-    "fmt"
-    
-)
-=======
 /*
  * File: server.go
  * ------------------------------
@@ -57,5 +49,3 @@ func main() {
     http.HandleFunc("/", handler)
     http.ListenAndServe(getPort(), nil)
 }
-
->>>>>>> eabfa30d1b66753885e2fa87ee4ee27fa81ddb21
